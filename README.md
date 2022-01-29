@@ -14,7 +14,7 @@ This algorithm works because a thread can only pick unmarked numbers to guess as
 In either case, our number will be correctly classified as either composite or prime by the end of the program’s execution. And this will be true for all numbers in our sieve.
 
 ### Efficiency of my design
-Checking multiples using 8 concurrent threads offers a significant speedup over the traditional sieve as we can now be checking multiples of up to 8 primes at a time. Empirically, my **single-threaded** sieve implementation runtime is **1011ms** (approximately) whereas my **multi-threaded** sieve implementation runtime is **890ms** (approximately), which amounts to a **12% speedup**.
+Checking multiples using 8 concurrent threads offers a significant speedup over the traditional sieve as we can now be checking multiples of up to 8 primes at a time. Empirically, my **single-threaded** sieve implementation runtime is **6882ms** (approximately) whereas my **multi-threaded** sieve implementation runtime is **2970ms** (approximately), which amounts to a **2.32x speedup**.
 
 ### Citations
 Shoutout the boi Ἐρατοσθένης (Eratosthenes)
