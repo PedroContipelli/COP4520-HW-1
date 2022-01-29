@@ -18,7 +18,7 @@ public class SieveThread extends Thread
 				// Guess that it is prime
 				sieve[current] = 1;
 				
-				// Mark all of its multiples as composite
+				// Mark all of its multiples as composite (with a slight speedup: we begin marking at current^2)
 				for (long mark = (long)(current) * current; mark < sieve.length; mark += current)
 				{
 					sieve[(int)mark] = 0;
